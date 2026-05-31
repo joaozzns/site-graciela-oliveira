@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graciela Oliveira — Psicóloga Clínica | CRP 05/75493</title>
+  <meta name="description" content="Psicóloga clínica com formação em Terapia Cognitivo-Comportamental (TCC) e Terapia Comportamental Dialética (DBT). Atendimento online e presencial para adultos e adolescentes a partir de 14 anos." />
+  <meta name="author" content="Graciela Oliveira" />
+  <meta name="keywords" content="psicóloga, TCC, DBT, terapia cognitivo-comportamental, ansiedade, depressão, transtorno bipolar, psicóloga online" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Graciela Oliveira — Psicóloga Clínica" />
+  <meta property="og:description" content="Acolher é o primeiro passo para florescer. Psicoterapia baseada em evidências para adultos e adolescentes a partir de 14 anos." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23A8B89A'/%3E%3Ctext x='50' y='68' font-family='Georgia' font-size='52' fill='%23FAF7F0' text-anchor='middle' font-style='italic'%3EG%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sage: {
+              DEFAULT: '#A8B89A',
+              dark: '#6B7A5A',
+              darker: '#4F5A42',
+              light: '#C8D4BC',
+              lighter: '#DDE5D2',
+            },
+            cream: {
+              DEFAULT: '#F2EDE0',
+              warm: '#E8DFCC',
+              dark: '#D4C9B0',
+            },
+            'off-white': '#FAF7F0',
+            graphite: '#3D3D3D',
+            gold: '#C9A961',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            'soft': '0 4px 20px -2px rgba(107, 122, 90, 0.08)',
+            'medium': '0 8px 32px -4px rgba(107, 122, 90, 0.12)',
+            'strong': '0 12px 48px -6px rgba(107, 122, 90, 0.18)',
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            'fade-in': 'fadeIn 1s ease-out forwards',
+            'float': 'float 6s ease-in-out infinite',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(24px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-12px)' },
+            },
+          },
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Graciela Oliveira — Psicóloga Clínica",
+    "description": "Psicóloga clínica com formação em TCC e DBT. Atendimento online e presencial.",
+    "medicalSpecialty": "Psychology",
+    "telephone": "+5521979391820",
+    "areaServed": "Brasil",
+    "priceRange": "$$",
+    "founder": {
+      "@type": "Person",
+      "name": "Graciela Oliveira",
+      "jobTitle": "Psicóloga Clínica",
+      "identifier": "CRP 05/75493"
+    }
+  }
+  </script>
+</head>
+
+<body class="bg-cream text-graphite font-sans antialiased">
+
+  <!-- ============== NAVBAR ============== -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-cream/80 backdrop-blur-md border-b border-cream-dark/30">
+    <nav class="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-full bg-sage flex items-center justify-center text-off-white font-serif text-2xl italic shadow-soft group-hover:scale-105 transition-transform">G</div>
+        <div class="hidden sm:block">
+          <p class="font-serif text-lg leading-tight text-sage-darker">Graciela Oliveira</p>
+          <p class="text-xs text-sage-dark/80 tracking-wide">CRP 05/75493 · Psicóloga</p>
+        </div>
+      </a>
+
+      <ul class="hidden lg:flex items-center gap-8 text-sm font-medium text-sage-darker">
+        <li><a href="#sobre" class="hover:text-sage-dark transition-colors">Sobre</a></li>
+        <li><a href="#areas" class="hover:text-sage-dark transition-colors">Áreas de Atuação</a></li>
+        <li><a href="#depoimentos" class="hover:text-sage-dark transition-colors">Depoimentos</a></li>
+        <li><a href="#abordagem" class="hover:text-sage-dark transition-colors">Abordagem</a></li>
+        <li><a href="#formacao" class="hover:text-sage-dark transition-colors">Formação</a></li>
+        <li><a href="#instagram" class="hover:text-sage-dark transition-colors">Instagram</a></li>
+        <li><a href="#faq" class="hover:text-sage-dark transition-colors">Dúvidas</a></li>
+      </ul>
+
+      <a href="https://wa.me/5521979391820?text=Olá%2C%20Graciela.%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20conversa." target="_blank" rel="noopener" class="hidden md:inline-flex items-center gap-2 bg-sage hover:bg-sage-dark text-off-white px-5 py-2.5 rounded-full text-sm font-medium shadow-soft hover:shadow-medium transition-all">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+
+      <button id="menuBtn" class="lg:hidden text-sage-darker p-2" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-cream border-t border-cream-dark/30">
+      <ul class="px-6 py-4 space-y-3 text-sage-darker font-medium">
+        <li><a href="#sobre" class="block py-2">Sobre</a></li>
+        <li><a href="#areas" class="block py-2">Áreas de Atuação</a></li>
+        <li><a href="#depoimentos" class="block py-2">Depoimentos</a></li>
+        <li><a href="#abordagem" class="block py-2">Abordagem</a></li>
+        <li><a href="#formacao" class="block py-2">Formação</a></li>
+        <li><a href="#instagram" class="block py-2">Instagram</a></li>
+        <li><a href="#faq" class="block py-2">Dúvidas</a></li>
+        <li class="pt-2">
+          <a href="https://wa.me/5521979391820" target="_blank" rel="noopener" class="block text-center bg-sage text-off-white px-5 py-3 rounded-full">Conversar no WhatsApp</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ============== HERO ============== -->
+  <section id="hero" class="relative pt-32 lg:pt-36 pb-20 lg:pb-32 overflow-hidden">
+    <!-- Decorative blobs -->
+    <div class="absolute top-20 -left-32 w-96 h-96 bg-sage-light rounded-full opacity-20 blur-3xl"></div>
+    <div class="absolute bottom-0 -right-32 w-96 h-96 bg-cream-warm rounded-full opacity-40 blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+      <div class="space-y-8 animate-fade-in-up">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-sage-light/50 rounded-full text-sm text-sage-darker font-medium">
+          <span class="text-gold">✦</span> Psicóloga Clínica · CRP 05/75493
+        </div>
+
+        <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-sage-darker">
+          Entender a sua mente é o primeiro passo para <em class="text-sage italic">transformar a sua vida.</em>
+        </h1>
+
+        <p class="text-lg md:text-xl text-graphite/80 leading-relaxed max-w-xl">
+          Vivenciar oscilações emocionais não significa estar presa ao sofrimento. Compreender o que você sente e desenvolver estratégias práticas é o verdadeiro caminho para recuperar a estabilidade e retomar o protagonismo da sua vida.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="https://wa.me/5521979391820?text=Olá%2C%20Graciela.%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20conversa." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-3 bg-sage hover:bg-sage-dark text-off-white px-8 py-4 rounded-full font-medium shadow-medium hover:shadow-strong transition-all hover:-translate-y-0.5">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Agende sua consulta
+          </a>
+          <a href="#sobre" class="inline-flex items-center justify-center gap-2 border-2 border-sage-dark text-sage-dark hover:bg-sage-dark hover:text-off-white px-8 py-4 rounded-full font-medium transition-all">
+            Conhecer meu trabalho
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+          </a>
+        </div>
+
+        <div class="flex flex-wrap gap-x-6 gap-y-3 pt-4 text-sm text-sage-darker">
+          <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sage rounded-full"></span> Atendimento online e presencial</span>
+          <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sage rounded-full"></span> A partir de 14 anos</span>
+          <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sage rounded-full"></span> TCC · DBT · Psicopatologia</span>
+        </div>
+      </div>
+
+      <div class="relative animate-fade-in">
+        <!-- Decorative shape behind image -->
+        <div class="absolute -top-6 -left-6 w-full h-full bg-sage-light rounded-[2rem] -z-10"></div>
+        <div class="absolute -bottom-6 -right-6 w-32 h-32 border-2 border-gold/40 rounded-full -z-10"></div>
+
+        <div class="relative rounded-[2rem] overflow-hidden shadow-strong bg-cream-warm aspect-[4/5]">
+          <img src="images/graciela-hero.jpg" alt="Graciela Oliveira, psicóloga clínica CRP 05/75493, em seu consultório" class="w-full h-full object-cover" loading="eager" />
+        </div>
+
+        <!-- Floating badge -->
+        <div class="absolute -bottom-6 left-6 lg:left-12 bg-off-white px-6 py-4 rounded-2xl shadow-medium flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-sage-light flex items-center justify-center text-sage-darker text-xl">✦</div>
+          <div>
+            <p class="font-serif text-sage-darker text-lg leading-tight">Acolhimento</p>
+            <p class="text-xs text-graphite/70">baseado em ciência</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== PULL QUOTE ============== -->
+  <section class="py-16 lg:py-20 bg-sage-darker text-cream">
+    <div class="max-w-4xl mx-auto px-6 lg:px-12 text-center">
+      <span class="text-gold text-3xl">❝</span>
+      <p class="font-serif italic text-3xl md:text-4xl lg:text-5xl leading-snug mt-4">
+        É um privilégio ser ponte de esperança, recomeço e vida.
+      </p>
+      <p class="mt-6 text-sm tracking-widest uppercase text-cream/60">— Graciela Oliveira</p>
+    </div>
+  </section>
+
+  <!-- ============== SOBRE ============== -->
+  <section id="sobre" class="py-20 lg:py-32 relative">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+        <div class="relative order-2 lg:order-1">
+          <div class="absolute -top-6 -right-6 w-full h-full bg-cream-warm rounded-[2rem] -z-10"></div>
+          <div class="absolute top-12 -left-8 w-24 h-24 bg-sage-light rounded-full opacity-50 -z-10"></div>
+
+          <div class="relative rounded-[2rem] overflow-hidden shadow-strong bg-cream-warm aspect-[4/5]">
+            <img src="images/graciela-sobre.jpg" alt="Graciela Oliveira em seu consultório de psicologia" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="space-y-6 order-1 lg:order-2">
+          <div class="inline-flex items-center gap-2 text-sm font-medium text-sage-dark tracking-wider uppercase">
+            <span class="w-8 h-px bg-sage-dark"></span> Quem sou eu
+          </div>
+
+          <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-sage-darker leading-tight">
+            Acredito na <em class="italic text-sage">cura pela fala.</em>
+          </h2>
+
+          <div class="space-y-4 text-lg text-graphite/85 leading-relaxed">
+            <p>
+              Meu nome é <strong class="text-sage-darker">Graciela Oliveira</strong> e sou psicóloga clínica há anos dedicada a oferecer um espaço terapêutico seguro, ético e baseado em evidências científicas.
+            </p>
+            <p>
+              Trabalho com <strong>Terapia Cognitivo-Comportamental (TCC)</strong> e <strong>Terapia Comportamental Dialética (DBT)</strong> — abordagens reconhecidas internacionalmente pela eficácia no tratamento de ansiedade, depressão, transtorno bipolar e dificuldades de regulação emocional.
+            </p>
+            <p>
+              Acredito que cada história merece ser ouvida com profundidade. Meu papel é caminhar ao seu lado unindo técnicas e escuta ativa, respeitando o seu tempo e construindo juntos, os recursos necessários para você recuperar o seu bem-estar e autonomia.
+            </p>
+          </div>
+
+          <div class="flex flex-wrap gap-3 pt-4">
+            <span class="px-4 py-2 bg-sage-light/50 text-sage-darker rounded-full text-sm font-medium">TCC</span>
+            <span class="px-4 py-2 bg-sage-light/50 text-sage-darker rounded-full text-sm font-medium">DBT</span>
+            <span class="px-4 py-2 bg-sage-light/50 text-sage-darker rounded-full text-sm font-medium">Psicopatologia</span>
+            <span class="px-4 py-2 bg-sage-light/50 text-sage-darker rounded-full text-sm font-medium">Transtorno Bipolar</span>
+          </div>
+
+          <div class="pt-4 flex items-center gap-4">
+            <div class="px-5 py-2 border border-sage-dark/40 rounded-full text-sm font-medium text-sage-darker">
+              CRP 05/75493
+            </div>
+            <span class="text-sm text-graphite/60">Conselho Regional de Psicologia</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== ÁREAS DE ATUAÇÃO ============== -->
+  <section id="areas" class="py-20 lg:py-32 bg-off-white relative">
+    <div class="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-cream to-transparent"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-12">
+
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 text-sm font-medium text-sage-dark tracking-wider uppercase mb-4">
+          <span class="w-8 h-px bg-sage-dark"></span> Como posso te ajudar <span class="w-8 h-px bg-sage-dark"></span>
+        </div>
+        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-sage-darker leading-tight">
+          Áreas de <em class="italic text-sage">atuação</em>
+        </h2>
+        <p class="mt-6 text-lg text-graphite/80">
+          Cada pessoa carrega uma história única. Aqui estão alguns dos contextos em que posso te acompanhar:
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <article class="group bg-cream rounded-3xl p-8 hover:shadow-medium transition-all hover:-translate-y-1 border border-sage-light/40">
+          <div class="w-14 h-14 rounded-2xl bg-sage-light flex items-center justify-center mb-5 group-hover:bg-sage transition-colors">
+            <svg class="w-7 h-7 text-sage-darker group-hover:text-off-white transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>
+          </div>
+          <h3 class="font-serif text-2xl text-sage-darker mb-2">Ansiedade</h3>
+          <p class="text-graphite/75 leading-relaxed">Quando a mente não para e o corpo sente o peso. Vamos compreender os gatilhos e construir recursos para lidar com eles.</p>
+        </article>
+
+        <article class="group bg-cream rounded-3xl p-8 hover:shadow-medium transition-all hover:-translate-y-1 border border-sage-light/40">
+          <div class="w-14 h-14 rounded-2xl bg-sage-light flex items-center justify-center mb-5 group-hover:bg-sage transition-colors">
+            <svg class="w-7 h-7 text-sage-darker group-hover:text-off-white transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="7.5 4.21 12 6.81 16.5 4.21"/><polyline points="7.5 19.79 7.5 14.6 3 12"/><polyline points="21 12 16.5 14.6 16.5 19.79"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <h3 class="font-serif text-2xl text-sage-darker mb-2">Depressão</h3>
+          <p class="text-graphite/75 leading-relaxed">Quando até as tarefas simples parecem impossíveis. Existe um caminho de volta, e você não precisa fazê-lo sozinha(o).</p>
+        </article>
+
+        <article class="group bg-cream rounded-3xl p-8 hover:shadow-medium transition-all hover:-translate-y-1 border border-sage-light/40">
+          <div class="w-14 h-14 rounded-2xl bg-sage-light flex items-center justify-center mb-5 group-hover:bg-sage transition-colors">
+            <svg class="w-7 h-7 text-sage-darker group-hover:text-off-white transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3 class="font-serif text-2xl text-sage-darker mb-2">Transtorno Bipolar</h3>
+          <p class="text-graphite/75 leading-relaxed">Compreender e equilibrar as oscilações de humor com acompanhamento técnico, baseado nas mais recentes evidências.</p>
+        </article>
+
+        <article class="group bg-cream rounded-3xl p-8 hover:shadow-medium transition-all hover:-translate-y-1 border border-sage-light/40">
+          <div class="w-14 h-14 rounded-2xl bg-sage-light flex items-center justify-center mb-5 group-hover:bg-sage transition-colors">
+            <svg class="w-7 h-7 text-sage-darker group-hover:text-off-white transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg>
+          </div>
+          <h3 class="font-serif text-2xl text-sage-darker mb-2">Autoestima</h3>
+          <p class="text-graphite/75 leading-relaxed">Reconstruir a relação consigo mesma(o), identificando crenças limitantes e desenvolvendo uma narrativa interna mais saudável.</p>
+        </article>
+
+        <article class="group bg-cream rounded-3xl p-8 hover:shadow-medium transition-all hover:-translate-y-1 border border-sage-light/40">
+          <div class="w-14 h-14 rounded-2xl bg-sage-light flex items-center justify-center mb-5 group-hover:bg-sage transition-colors">
+            <svg class="w-7 h-7 text-sage-darker group-hover:text-off-white transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/><path d="M12 12v.01"/></svg>
+          </div>
+          <h3 class="font-serif text-2xl text-sage-darker mb-2">Bem-estar</h3>
+          <p class="text-graphite/75 leading-relaxed">Desenvolver recursos emocionais para a vida — não apenas para momentos difíceis, mas para uma existência mais plena.</p>
+        </article>
+
+        <article class="group bg-cream rounded-3xl p-8 hover:shadow-medium transition-all hover:-translate-y-1 border border-sage-light/40">
+          <div class="w-14 h-14 rounded-2xl bg-sage-light flex items-center justify-center mb-5 group-hover:bg-sage transition-colors">
+            <svg class="w-7 h-7 text-sage-darker group-hover:text-off-white transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+          </div>
+          <h3 class="font-serif text-2xl text-sage-darker mb-2">Oscilações de humor</h3>
+          <p class="text-graphite/75 leading-relaxed">Quando algo não vai bem, mas você ainda não sabe nomear. A escuta clínica ajuda a dar contornos ao que parece confuso.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== DEPOIMENTOS ============== -->
+  <section id="depoimentos" class="py-20 lg:py-32 bg-sage-darker text-cream relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 relative">
+
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 text-sm font-medium text-cream/70 tracking-wider uppercase mb-4">
+          <span class="w-8 h-px bg-cream/40"></span> Depoimentos <span class="w-8 h-px bg-cream/40"></span>
+        </div>
+        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight">
+          O que as pessoas <em class="italic text-gold">dizem</em>
+        </h2>
+        <p class="mt-6 text-lg text-cream/80">
+          Histórias de quem encontrou, na terapia, um espaço de transformação.
+        </p>
+      </div>
+
+      <div class="columns-1 md:columns-2 lg:columns-3 gap-6 [column-fill:_balance]">
+
+        <article class="break-inside-avoid bg-cream/5 backdrop-blur rounded-3xl p-8 border border-cream/10 mb-6">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex gap-0.5 text-gold text-lg" aria-label="5 de 5 estrelas">★★★★★</div>
+            <span class="inline-flex items-center gap-1 text-xs text-cream/50"><svg class="w-4 h-4" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg> Google</span>
+          </div>
+          <p class="text-cream/90 leading-relaxed mb-6">Minha experiência com a psicóloga Graciela tem sido extremamente positiva e transformadora. Ela é uma profissional excepcional, sempre prestativa e atenciosa, além de ser uma ótima ouvinte. Sua dedicação ao cuidado com os pacientes é admirável e reflete o carinho e o respeito. Graciela é muito querida, educada e possui uma sensibilidade única para entender e apoiar nas mais diversas situações. Sua abordagem acolhedora e profissional faz toda a diferença, e sou profundamente grata por ter uma psicóloga tão excelente ao meu lado.</p>
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-sage flex items-center justify-center text-off-white font-serif text-lg">S</div>
+            <p class="font-medium text-cream">Saphyra</p>
+          </div>
+        </article>
+
+        <article class="break-inside-avoid bg-cream/5 backdrop-blur rounded-3xl p-8 border border-cream/10 mb-6">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex gap-0.5 text-gold text-lg" aria-label="5 de 5 estrelas">★★★★★</div>
+            <span class="inline-flex items-center gap-1 text-xs text-cream/50"><svg class="w-4 h-4" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg> Google</span>
+          </div>
+          <p class="text-cream/90 leading-relaxed mb-6">A terapia que mudou minha vida, foi incrível encontrar uma psicóloga que me identificasse e que eu pudesse enxergar os reflexos da terapia no meu dia a dia. Sempre que entro ansiosa ou angustiada para uma sessão, saio dela mais confiante, calma e feliz! 🤍 Obrigada por tudo Gra, você é incrível!</p>
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-sage flex items-center justify-center text-off-white font-serif text-lg">V</div>
+            <p class="font-medium text-cream">Victoria</p>
+          </div>
+        </article>
+
+        <article class="break-inside-avoid bg-cream/5 backdrop-blur rounded-3xl p-8 border border-cream/10 mb-6">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex gap-0.5 text-gold text-lg" aria-label="5 de 5 estrelas">★★★★★</div>
+            <span class="inline-flex items-center gap-1 text-xs text-cream/50"><svg class="w-4 h-4" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg> Google</span>
+          </div>
+          <p class="text-cream/90 leading-relaxed mb-6">Só tenho elogios para a Psicóloga Graciela Oliveira. Juntas já há alguns meses, nosso acompanhamento tem sido de extrema importância para mim. É uma profissional atenciosa, respeitosa, observadora e empática. Sempre atenta a cada detalhe e disposta a ajudar na resolução de todas as demandas. Sabe apontar amorosamente os pontos de melhoria e enaltecer os pontos de força. Eternamente grata pelo profissionalismo, ajuda e carinho.</p>
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-sage flex items-center justify-center text-off-white font-serif text-lg">A</div>
+            <p class="font-medium text-cream">Ana Olivia</p>
+          </div>
+        </article>
+
+        <article class="break-inside-avoid bg-cream/5 backdrop-blur rounded-3xl p-8 border border-cream/10 mb-6">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex gap-0.5 text-gold text-lg" aria-label="5 de 5 estrelas">★★★★★</div>
+            <span class="inline-flex items-center gap-1 text-xs text-cream/50"><svg class="w-4 h-4" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg> Google</span>
+          </div>
+          <p class="text-cream/90 leading-relaxed mb-6">Graci, você é incrível! Sua gentileza e empatia são fundamentais para criar um ambiente seguro e acolhedor. Você realmente se importa com seus pacientes e isso é algo muito raro e valoroso. Sempre que preciso, você está lá para ajudar, mesmo fora das sessões. Muito obrigado por tudo! Super indico!</p>
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-sage flex items-center justify-center text-off-white font-serif text-lg">A</div>
+            <p class="font-medium text-cream">Ana Motta</p>
+          </div>
+        </article>
+
+        <article class="break-inside-avoid bg-cream/5 backdrop-blur rounded-3xl p-8 border border-cream/10 mb-6">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex gap-0.5 text-gold text-lg" aria-label="5 de 5 estrelas">★★★★★</div>
+            <span class="inline-flex items-center gap-1 text-xs text-cream/50"><svg class="w-4 h-4" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg> Google</span>
+          </div>
+          <p class="text-cream/90 leading-relaxed mb-6">Pessoa incrível! Já na primeira sessão tive certeza que queria continuar com ela e foi uma das melhores escolhas que eu fiz! Trabalho excelente, com metodologia aplicada e ética.. agradeço muito por estarmos juntas nessa (como ela sempre diz) e a evolução tem sido notável 🥰🥰</p>
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-sage flex items-center justify-center text-off-white font-serif text-lg">G</div>
+            <p class="font-medium text-cream">Gláucia</p>
+          </div>
+        </article>
+
+        <article class="break-inside-avoid bg-cream/5 backdrop-blur rounded-3xl p-8 border border-cream/10 mb-6">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex gap-0.5 text-gold text-lg" aria-label="5 de 5 estrelas">★★★★★</div>
+            <span class="inline-flex items-center gap-1 text-xs text-cream/50"><svg class="w-4 h-4" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg> Google</span>
+          </div>
+          <p class="text-cream/90 leading-relaxed mb-6">Uma profissional maravilhosa! Atenciosa, paciente, empática... Estou adorando as terapias com ela, tenho me sentido muito melhor.</p>
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-sage flex items-center justify-center text-off-white font-serif text-lg">J</div>
+            <p class="font-medium text-cream">Jessinha</p>
+          </div>
+        </article>
+
+        <article class="break-inside-avoid bg-cream/5 backdrop-blur rounded-3xl p-8 border border-cream/10 mb-6">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex gap-0.5 text-gold text-lg" aria-label="5 de 5 estrelas">★★★★★</div>
+            <span class="inline-flex items-center gap-1 text-xs text-cream/50"><svg class="w-4 h-4" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg> Google</span>
+          </div>
+          <p class="text-cream/90 leading-relaxed mb-6">O atendimento da Graciela é ótimo, ela é muito paciente e atenciosa! Vivi muito tempo com diagnósticos errados, mas com o acompanhamento dela, tive o diagnóstico correto e tratamento certeiro. Graças ao trabalho dela tenho uma vida mais tranquila e um futuro otimista.</p>
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-sage flex items-center justify-center text-off-white font-serif text-lg">J</div>
+            <p class="font-medium text-cream">Jenifer</p>
+          </div>
+        </article>
+
+        <article class="break-inside-avoid bg-cream/5 backdrop-blur rounded-3xl p-8 border border-cream/10 mb-6">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex gap-0.5 text-gold text-lg" aria-label="5 de 5 estrelas">★★★★★</div>
+            <span class="inline-flex items-center gap-1 text-xs text-cream/50"><svg class="w-4 h-4" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg> Google</span>
+          </div>
+          <p class="text-cream/90 leading-relaxed mb-6">A jornada com o transtorno bipolar não é fácil, pelo contrário, é cheia de altos e baixos, incertezas e recomeços. Mas ter uma psicóloga tão sensível, competente e acolhedora ao meu lado fez toda a diferença. Com sua escuta atenta, seu olhar humano e suas orientações firmes, a Psicóloga Graciela me ajudou a entender o que antes parecia confuso, a acolher minhas emoções e a construir estratégias para lidar com os extremos que essa condição impõe. Gratidão é pouco diante do cuidado, da paciência e do respeito com que ela me trata em cada sessão. Sua atuação vai muito além da técnica, ela transforma vidas com empatia e dedicação. Sou imensamente grata por tê-la em meu processo de cura e autoconhecimento. Obrigada, de coração.</p>
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-sage flex items-center justify-center text-off-white font-serif text-lg">W</div>
+            <p class="font-medium text-cream">Welen</p>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== ABORDAGEM ============== -->
+  <section id="abordagem" class="py-20 lg:py-32 bg-cream">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 text-sm font-medium text-sage-dark tracking-wider uppercase mb-4">
+          <span class="w-8 h-px bg-sage-dark"></span> Minha Abordagem <span class="w-8 h-px bg-sage-dark"></span>
+        </div>
+        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-sage-darker leading-tight">
+          Psicoterapia <em class="italic text-sage">baseada em evidências</em>
+        </h2>
+        <p class="mt-6 text-lg text-graphite/80">
+          Trabalho com abordagens cientificamente validadas, integradas de forma personalizada para cada paciente.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <article class="bg-off-white rounded-3xl p-10 shadow-soft border border-sage-light/30">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="px-3 py-1 bg-sage rounded-full text-xs font-bold text-off-white tracking-wider">TCC</div>
+            <span class="text-xs text-graphite/60 uppercase tracking-wider">Padrão-ouro</span>
+          </div>
+          <h3 class="font-serif text-3xl text-sage-darker mb-4">Terapia Cognitivo-Comportamental</h3>
+          <p class="text-graphite/80 leading-relaxed mb-4">
+            Método com sólida base científica, validado internacionalmente para o tratamento de <strong>ansiedade, depressão e diversos transtornos psicológicos</strong>.
+          </p>
+          <p class="text-graphite/80 leading-relaxed">
+            Trabalha a relação entre pensamentos, emoções e comportamentos, oferecendo ferramentas práticas que você pode aplicar no seu dia a dia.
+          </p>
+        </article>
+
+        <article class="bg-off-white rounded-3xl p-10 shadow-soft border border-sage-light/30">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="px-3 py-1 bg-sage-darker rounded-full text-xs font-bold text-off-white tracking-wider">DBT</div>
+            <span class="text-xs text-graphite/60 uppercase tracking-wider">Regulação emocional</span>
+          </div>
+          <h3 class="font-serif text-3xl text-sage-darker mb-4">Terapia Comportamental Dialética</h3>
+          <p class="text-graphite/80 leading-relaxed mb-4">
+            Abordagem desenvolvida para <strong>regulação emocional intensa</strong>, especialmente eficaz para pessoas com oscilações de humor, transtorno bipolar e dificuldades em relacionamentos.
+          </p>
+          <p class="text-graphite/80 leading-relaxed">
+            Combina aceitação e mudança, ensinando habilidades de mindfulness, tolerância ao mal-estar e eficácia interpessoal.
+          </p>
+        </article>
+
+      </div>
+
+      <p class="text-center mt-12 text-graphite/70 italic max-w-2xl mx-auto">
+        A abordagem é sempre <strong>integrativa e personalizada</strong>. Cada paciente recebe um plano terapêutico construído a partir das suas necessidades, ritmo e objetivos.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ============== FORMAÇÃO ============== -->
+  <section id="formacao" class="py-20 lg:py-32 bg-off-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 text-sm font-medium text-sage-dark tracking-wider uppercase mb-4">
+          <span class="w-8 h-px bg-sage-dark"></span> Formação <span class="w-8 h-px bg-sage-dark"></span>
+        </div>
+        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-sage-darker leading-tight">
+          Estudo <em class="italic text-sage">contínuo</em>
+        </h2>
+        <p class="mt-6 text-lg text-graphite/80">
+          Acredito que cuidar de pessoas exige aprendizado constante. Veja minha trajetória de formação.
+        </p>
+      </div>
+
+      <div class="max-w-3xl mx-auto">
+        <div class="space-y-4">
+
+          <div class="flex gap-5 items-start p-5 bg-cream rounded-2xl border border-sage-light/40 hover:shadow-soft transition-shadow">
+            <div class="w-12 h-12 rounded-xl bg-sage flex-shrink-0 flex items-center justify-center text-off-white font-serif text-xl">✦</div>
+            <div>
+              <h4 class="font-serif text-xl text-sage-darker">Terapia Cognitivo-Comportamental (TCC)</h4>
+              <p class="text-sm text-graphite/70 mt-1">Grupo PBE</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5 items-start p-5 bg-cream rounded-2xl border border-sage-light/40 hover:shadow-soft transition-shadow">
+            <div class="w-12 h-12 rounded-xl bg-sage flex-shrink-0 flex items-center justify-center text-off-white font-serif text-xl">✦</div>
+            <div>
+              <h4 class="font-serif text-xl text-sage-darker">Psicopatologia</h4>
+              <p class="text-sm text-graphite/70 mt-1">Estudo e compreensão dos transtornos mentais — Grupo PBE</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5 items-start p-5 bg-cream rounded-2xl border border-sage-light/40 hover:shadow-soft transition-shadow">
+            <div class="w-12 h-12 rounded-xl bg-sage flex-shrink-0 flex items-center justify-center text-off-white font-serif text-xl">✦</div>
+            <div>
+              <h4 class="font-serif text-xl text-sage-darker">Formação Continuada em Transtorno Bipolar</h4>
+              <p class="text-sm text-graphite/70 mt-1">Aprofundamento em manejo clínico e psicoeducação</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5 items-start p-5 bg-cream rounded-2xl border border-sage-light/40 hover:shadow-soft transition-shadow">
+            <div class="w-12 h-12 rounded-xl bg-sage flex-shrink-0 flex items-center justify-center text-off-white font-serif text-xl">✦</div>
+            <div>
+              <h4 class="font-serif text-xl text-sage-darker">Formação em Terapia Comportamental Dialética (DBT)</h4>
+              <p class="text-sm text-graphite/70 mt-1">Habilidades para regulação emocional</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5 items-start p-5 bg-cream rounded-2xl border border-sage-light/40 hover:shadow-soft transition-shadow">
+            <div class="w-12 h-12 rounded-xl bg-sage flex-shrink-0 flex items-center justify-center text-off-white font-serif text-xl">✦</div>
+            <div>
+              <h4 class="font-serif text-xl text-sage-darker">Intensivo em Prevenção do Suicídio</h4>
+              <p class="text-sm text-graphite/70 mt-1">Grupo PBE</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5 items-start p-5 bg-cream rounded-2xl border border-sage-light/40 hover:shadow-soft transition-shadow">
+            <div class="w-12 h-12 rounded-xl bg-sage flex-shrink-0 flex items-center justify-center text-off-white font-serif text-xl">✦</div>
+            <div>
+              <h4 class="font-serif text-xl text-sage-darker">Intensivo em Psicofarmacologia</h4>
+              <p class="text-sm text-graphite/70 mt-1">Grupo PBE</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5 items-start p-5 bg-cream rounded-2xl border border-sage-light/40 hover:shadow-soft transition-shadow">
+            <div class="w-12 h-12 rounded-xl bg-sage flex-shrink-0 flex items-center justify-center text-off-white font-serif text-xl">✦</div>
+            <div>
+              <h4 class="font-serif text-xl text-sage-darker">Intensivo em Terapia Comportamental Dialética (DBT)</h4>
+              <p class="text-sm text-graphite/70 mt-1">Grupo PBE</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== INSTAGRAM ============== -->
+  <section id="instagram" class="py-20 lg:py-32 bg-cream relative overflow-hidden">
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-cream-warm rounded-full opacity-40 blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-12">
+
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 text-sm font-medium text-sage-dark tracking-wider uppercase mb-4">
+          <span class="w-8 h-px bg-sage-dark"></span> Instagram <span class="w-8 h-px bg-sage-dark"></span>
+        </div>
+        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-sage-darker leading-tight">
+          Me siga no <em class="italic text-sage">Instagram</em>
+        </h2>
+        <p class="mt-6 text-lg text-graphite/80">
+          Conteúdos sobre saúde mental, autoconhecimento e bem-estar no dia a dia.
+        </p>
+        <a href="https://www.instagram.com/gracielaoliveira.psi/" target="_blank" rel="noopener" class="inline-flex items-center gap-3 mt-8 px-7 py-3.5 rounded-full font-medium text-off-white shadow-medium hover:shadow-strong transition-all hover:-translate-y-0.5" style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.12 1.38C1.36 2.67.94 3.34.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.38 2.12.66.66 1.33 1.08 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.3 1.46-.72 2.12-1.38.66-.66 1.08-1.33 1.38-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.3-.79-.72-1.46-1.38-2.12C21.33 1.36 20.66.94 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-10.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+          @gracielaoliveira.psi
+        </a>
+      </div>
+
+      <!-- Posts reais via embed oficial do Instagram. Para trocar/adicionar posts:
+           duplique um bloco <blockquote> e atualize o data-instgrm-permalink e o href com o link do post. -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
+
+        <blockquote class="instagram-media w-full" data-instgrm-permalink="https://www.instagram.com/reel/DYm31-XStGe/?utm_source=ig_embed" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.08); margin:0; max-width:540px; min-width:280px; width:100%;">
+          <a href="https://www.instagram.com/reel/DYm31-XStGe/" target="_blank" rel="noopener">Ver no Instagram</a>
+        </blockquote>
+
+        <blockquote class="instagram-media w-full" data-instgrm-permalink="https://www.instagram.com/p/DW1agibiWv8/?utm_source=ig_embed" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.08); margin:0; max-width:540px; min-width:280px; width:100%;">
+          <a href="https://www.instagram.com/p/DW1agibiWv8/" target="_blank" rel="noopener">Ver no Instagram</a>
+        </blockquote>
+
+        <blockquote class="instagram-media w-full" data-instgrm-permalink="https://www.instagram.com/p/DXHcjg3lJSV/?utm_source=ig_embed" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.08); margin:0; max-width:540px; min-width:280px; width:100%;">
+          <a href="https://www.instagram.com/p/DXHcjg3lJSV/" target="_blank" rel="noopener">Ver no Instagram</a>
+        </blockquote>
+
+        <blockquote class="instagram-media w-full" data-instgrm-permalink="https://www.instagram.com/reel/DXzN7ivMjEK/?utm_source=ig_embed" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.08); margin:0; max-width:540px; min-width:280px; width:100%;">
+          <a href="https://www.instagram.com/reel/DXzN7ivMjEK/" target="_blank" rel="noopener">Ver no Instagram</a>
+        </blockquote>
+
+      </div>
+      <script async src="https://www.instagram.com/embed.js"></script>
+    </div>
+  </section>
+
+  <!-- ============== PULL QUOTE 2 ============== -->
+  <section class="py-20 bg-cream">
+    <div class="max-w-4xl mx-auto px-6 lg:px-12 text-center">
+      <span class="text-gold text-3xl">❝</span>
+      <p class="font-serif italic text-3xl md:text-4xl lg:text-5xl leading-snug text-sage-darker mt-4">
+        Não são as situações que nos perturbam, mas sim a forma como as interpretamos.
+      </p>
+      <p class="mt-6 text-sm tracking-widest uppercase text-sage-dark/60">— Graciela Oliveira</p>
+    </div>
+  </section>
+
+  <!-- ============== FAQ ============== -->
+  <section id="faq" class="py-20 lg:py-32 bg-off-white">
+    <div class="max-w-4xl mx-auto px-6 lg:px-12">
+
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="inline-flex items-center gap-2 text-sm font-medium text-sage-dark tracking-wider uppercase mb-4">
+          <span class="w-8 h-px bg-sage-dark"></span> Dúvidas Frequentes <span class="w-8 h-px bg-sage-dark"></span>
+        </div>
+        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-sage-darker leading-tight">
+          Talvez você esteja se <em class="italic text-sage">perguntando</em>...
+        </h2>
+      </div>
+
+      <div class="space-y-3" id="faqList">
+
+        <details class="group bg-cream rounded-2xl border border-sage-light/40 overflow-hidden">
+          <summary class="flex items-center justify-between gap-4 cursor-pointer p-6 list-none">
+            <h3 class="font-serif text-lg md:text-xl text-sage-darker">Como sei se preciso de terapia?</h3>
+            <span class="w-8 h-8 rounded-full bg-sage-light/60 flex items-center justify-center flex-shrink-0 group-open:rotate-45 transition-transform">
+              <svg class="w-4 h-4 text-sage-darker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </summary>
+          <p class="px-6 pb-6 text-graphite/80 leading-relaxed">Não existe um único critério. Em geral, quando algo do seu emocional vem dificultando o seu cotidiano, seus relacionamentos ou sua qualidade de vida, vale a pena procurar ajuda. A primeira conversa pode esclarecer se a terapia é o caminho mais indicado para você nesse momento.</p>
+        </details>
+
+        <details class="group bg-cream rounded-2xl border border-sage-light/40 overflow-hidden">
+          <summary class="flex items-center justify-between gap-4 cursor-pointer p-6 list-none">
+            <h3 class="font-serif text-lg md:text-xl text-sage-darker">Qual a diferença entre psicólogo e psiquiatra?</h3>
+            <span class="w-8 h-8 rounded-full bg-sage-light/60 flex items-center justify-center flex-shrink-0 group-open:rotate-45 transition-transform">
+              <svg class="w-4 h-4 text-sage-darker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </summary>
+          <p class="px-6 pb-6 text-graphite/80 leading-relaxed">O psiquiatra é médico e pode prescrever medicações. O psicólogo conduz o processo terapêutico através da escuta e de técnicas psicológicas, sem prescrever medicamentos. Em muitos casos, os dois profissionais trabalham em conjunto para oferecer o melhor cuidado.</p>
+        </details>
+
+        <details class="group bg-cream rounded-2xl border border-sage-light/40 overflow-hidden">
+          <summary class="flex items-center justify-between gap-4 cursor-pointer p-6 list-none">
+            <h3 class="font-serif text-lg md:text-xl text-sage-darker">Quanto tempo dura um processo terapêutico?</h3>
+            <span class="w-8 h-8 rounded-full bg-sage-light/60 flex items-center justify-center flex-shrink-0 group-open:rotate-45 transition-transform">
+              <svg class="w-4 h-4 text-sage-darker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </summary>
+          <p class="px-6 pb-6 text-graphite/80 leading-relaxed">Cada processo é único. Algumas pessoas se beneficiam de um trabalho focal de poucos meses; outras preferem um acompanhamento mais longo. A TCC, em particular, costuma ter objetivos terapêuticos bem definidos, com avaliações periódicas do progresso.</p>
+        </details>
+
+        <details class="group bg-cream rounded-2xl border border-sage-light/40 overflow-hidden">
+          <summary class="flex items-center justify-between gap-4 cursor-pointer p-6 list-none">
+            <h3 class="font-serif text-lg md:text-xl text-sage-darker">O atendimento online é tão eficaz quanto o presencial?</h3>
+            <span class="w-8 h-8 rounded-full bg-sage-light/60 flex items-center justify-center flex-shrink-0 group-open:rotate-45 transition-transform">
+              <svg class="w-4 h-4 text-sage-darker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </summary>
+          <p class="px-6 pb-6 text-graphite/80 leading-relaxed">Sim. Diversos estudos científicos indicam eficácia equivalente entre as duas modalidades, especialmente para abordagens como TCC e DBT. A modalidade online é regulamentada pelo Conselho Federal de Psicologia (Resolução nº 11/2018) e oferece praticidade e acesso de qualquer lugar.</p>
+        </details>
+
+        <details class="group bg-cream rounded-2xl border border-sage-light/40 overflow-hidden">
+          <summary class="flex items-center justify-between gap-4 cursor-pointer p-6 list-none">
+            <h3 class="font-serif text-lg md:text-xl text-sage-darker">Quais formas de pagamento são aceitas?</h3>
+            <span class="w-8 h-8 rounded-full bg-sage-light/60 flex items-center justify-center flex-shrink-0 group-open:rotate-45 transition-transform">
+              <svg class="w-4 h-4 text-sage-darker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </summary>
+          <p class="px-6 pb-6 text-graphite/80 leading-relaxed">Aceito Pix, transferência bancária e outros meios. Os valores e condições são apresentados de forma transparente no primeiro contato pelo WhatsApp.</p>
+        </details>
+
+        <details class="group bg-cream rounded-2xl border border-sage-light/40 overflow-hidden">
+          <summary class="flex items-center justify-between gap-4 cursor-pointer p-6 list-none">
+            <h3 class="font-serif text-lg md:text-xl text-sage-darker">Você emite recibo para reembolso de plano de saúde?</h3>
+            <span class="w-8 h-8 rounded-full bg-sage-light/60 flex items-center justify-center flex-shrink-0 group-open:rotate-45 transition-transform">
+              <svg class="w-4 h-4 text-sage-darker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </summary>
+          <p class="px-6 pb-6 text-graphite/80 leading-relaxed">Sim. Emito recibo psicológico que pode ser usado para reembolso parcial em planos de saúde que cobrem psicoterapia, bem como para abatimento no Imposto de Renda.</p>
+        </details>
+
+        <details class="group bg-cream rounded-2xl border border-sage-light/40 overflow-hidden">
+          <summary class="flex items-center justify-between gap-4 cursor-pointer p-6 list-none">
+            <h3 class="font-serif text-lg md:text-xl text-sage-darker">O que é sigilo profissional?</h3>
+            <span class="w-8 h-8 rounded-full bg-sage-light/60 flex items-center justify-center flex-shrink-0 group-open:rotate-45 transition-transform">
+              <svg class="w-4 h-4 text-sage-darker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </summary>
+          <p class="px-6 pb-6 text-graphite/80 leading-relaxed">Tudo o que é compartilhado em sessão é estritamente confidencial, conforme o Código de Ética Profissional do Psicólogo. Existem apenas algumas exceções previstas em lei, como situações de risco iminente de vida, que são sempre conversadas previamente com o paciente.</p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA FINAL ============== -->
+  <section id="contato" class="py-20 lg:py-32 bg-cream relative overflow-hidden">
+    <div class="absolute top-10 left-10 w-72 h-72 bg-sage-light rounded-full opacity-30 blur-3xl"></div>
+    <div class="absolute bottom-10 right-10 w-96 h-96 bg-cream-warm rounded-full opacity-50 blur-3xl"></div>
+
+    <div class="relative max-w-4xl mx-auto px-6 lg:px-12 text-center">
+      <div class="bg-off-white rounded-[2.5rem] p-10 md:p-16 shadow-medium border border-sage-light/30">
+        <div class="inline-flex items-center gap-2 text-sm font-medium text-sage-dark tracking-wider uppercase mb-6">
+          <span class="text-gold text-lg">✦</span> Vamos conversar
+        </div>
+
+        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-sage-darker leading-tight mb-6">
+          Dar o primeiro passo é o <em class="italic text-sage">mais difícil.</em>
+          <br/>Estou aqui para te receber.
+        </h2>
+
+        <a href="https://wa.me/5521979391820?text=Olá%2C%20Graciela.%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20conversa." target="_blank" rel="noopener" class="inline-flex items-center gap-3 bg-sage hover:bg-sage-dark text-off-white px-10 py-5 rounded-full font-medium text-lg shadow-medium hover:shadow-strong transition-all hover:-translate-y-0.5 mt-4">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Agende sua sessão
+        </a>
+
+        <div class="mt-12 pt-8 border-t border-sage-light/40 text-sm text-graphite/60 max-w-2xl mx-auto">
+          <p class="font-medium text-sage-darker mb-2">⚠ Em caso de emergência ou risco de vida:</p>
+          <p>Ligue para o <strong>CVV (188)</strong> — atendimento gratuito 24h — ou procure o pronto-socorro mais próximo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="bg-sage-darker text-cream/90 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+      <div class="grid md:grid-cols-3 gap-10 mb-12">
+
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-full bg-cream flex items-center justify-center text-sage-darker font-serif text-2xl italic">G</div>
+            <div>
+              <p class="font-serif text-xl text-cream">Graciela Oliveira</p>
+              <p class="text-xs text-cream/60 tracking-wide">Psicóloga Clínica</p>
+            </div>
+          </div>
+          <p class="text-sm text-cream/70 leading-relaxed">
+            Psicoterapia baseada em evidências para adultos e adolescentes a partir de 14 anos.
+          </p>
+          <p class="mt-4 inline-block px-4 py-1.5 border border-cream/30 rounded-full text-xs font-medium text-cream/90">CRP 05/75493</p>
+        </div>
+
+        <div>
+          <h4 class="font-serif text-lg text-cream mb-4">Navegação</h4>
+          <ul class="space-y-2 text-sm text-cream/75">
+            <li><a href="#sobre" class="hover:text-cream transition-colors">Sobre</a></li>
+            <li><a href="#areas" class="hover:text-cream transition-colors">Áreas de Atuação</a></li>
+            <li><a href="#abordagem" class="hover:text-cream transition-colors">Abordagem</a></li>
+            <li><a href="#formacao" class="hover:text-cream transition-colors">Formação</a></li>
+            <li><a href="#faq" class="hover:text-cream transition-colors">Dúvidas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-serif text-lg text-cream mb-4">Contato</h4>
+          <ul class="space-y-3 text-sm text-cream/75">
+            <li class="flex items-start gap-3">
+              <svg class="w-4 h-4 mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <a href="https://wa.me/5521979391820" target="_blank" rel="noopener" class="hover:text-cream transition-colors">(21) 97939-1820</a>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-4 h-4 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Atendimento mediante agendamento
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-4 h-4 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Online · Brasil
+            </li>
+          </ul>
+
+          <a href="https://wa.me/5521979391820" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 bg-cream text-sage-darker px-5 py-2.5 rounded-full text-sm font-medium hover:bg-off-white transition-colors">
+            Conversar agora
+          </a>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-cream/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-cream/50">
+        <p>© <span id="currentYear">2026</span> Graciela Oliveira · Psicóloga · Todos os direitos reservados</p>
+        <p>Este site segue as diretrizes do Conselho Federal de Psicologia (Resolução CFP nº 03/2007).</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============== WHATSAPP FLOATING BUTTON ============== -->
+  <a href="https://wa.me/5521979391820?text=Olá%2C%20Graciela.%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20conversa." target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#25D366] hover:bg-[#20BD5A] text-white rounded-full shadow-strong flex items-center justify-center hover:scale-110 transition-all animate-float" aria-label="Conversar no WhatsApp">
+    <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="absolute right-full mr-3 hidden md:block bg-sage-darker text-cream px-3 py-1.5 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">Conversar no WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

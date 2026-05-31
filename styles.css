@@ -1,0 +1,119 @@
+/* ==============================
+   GRACIELA OLIVEIRA - CUSTOM STYLES
+   ============================== */
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #F2EDE0;
+  color: #3D3D3D;
+}
+
+/* Selection color */
+::selection {
+  background-color: #A8B89A;
+  color: #FAF7F0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #F2EDE0;
+}
+::-webkit-scrollbar-thumb {
+  background: #A8B89A;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6B7A5A;
+}
+
+/* Remove default details marker */
+details summary::-webkit-details-marker {
+  display: none;
+}
+details summary {
+  list-style: none;
+}
+
+/* Smooth open transition for details */
+details[open] summary ~ * {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Navbar scroll effect */
+#navbar.scrolled {
+  background-color: rgba(242, 237, 224, 0.95);
+  box-shadow: 0 4px 20px -2px rgba(107, 122, 90, 0.08);
+}
+
+/* Reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Image styling for placeholder fallback */
+img {
+  background-color: #E8DFCC;
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Prevent layout shift on hero image load */
+#hero img {
+  min-height: 400px;
+}
+
+/* Better focus states for accessibility */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #6B7A5A;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* Print styles */
+@media print {
+  #navbar,
+  .fixed,
+  footer {
+    display: none;
+  }
+}
