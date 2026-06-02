@@ -620,28 +620,32 @@
         </a>
       </div>
 
-      <!-- Posts reais via embed oficial do Instagram. Para trocar/adicionar posts:
-           duplique um bloco <blockquote> e atualize o data-instgrm-permalink e o href com o link do post. -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
+      <!-- Cards de posts: cada card mostra apenas a mídia do post (cabeçalho e curtidas/comentários
+           são recortados). Para trocar/adicionar: duplique um <a> e atualize o href e o src do iframe
+           com o link do post seguido de /embed/ (ex.: https://www.instagram.com/p/CODIGO/embed/). -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
 
-        <blockquote class="instagram-media w-full" data-instgrm-permalink="https://www.instagram.com/reel/DYm31-XStGe/?utm_source=ig_embed" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.08); margin:0; max-width:540px; min-width:280px; width:100%;">
-          <a href="https://www.instagram.com/reel/DYm31-XStGe/" target="_blank" rel="noopener">Ver no Instagram</a>
-        </blockquote>
+        <a href="https://www.instagram.com/reel/DYm31-XStGe/" target="_blank" rel="noopener" aria-label="Abrir post no Instagram" class="group relative block aspect-square rounded-2xl overflow-hidden shadow-soft hover:shadow-medium transition-all bg-white">
+          <iframe src="https://www.instagram.com/reel/DYm31-XStGe/embed/" loading="lazy" scrolling="no" allowtransparency="true" class="absolute left-0 w-full border-0 pointer-events-none" style="top:-54px; height:calc(100% + 220px);"></iframe>
+          <span class="absolute inset-0 bg-sage-darker/0 group-hover:bg-sage-darker/10 transition-colors"></span>
+        </a>
 
-        <blockquote class="instagram-media w-full" data-instgrm-permalink="https://www.instagram.com/p/DW1agibiWv8/?utm_source=ig_embed" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.08); margin:0; max-width:540px; min-width:280px; width:100%;">
-          <a href="https://www.instagram.com/p/DW1agibiWv8/" target="_blank" rel="noopener">Ver no Instagram</a>
-        </blockquote>
+        <a href="https://www.instagram.com/p/DW1agibiWv8/" target="_blank" rel="noopener" aria-label="Abrir post no Instagram" class="group relative block aspect-square rounded-2xl overflow-hidden shadow-soft hover:shadow-medium transition-all bg-white">
+          <iframe src="https://www.instagram.com/p/DW1agibiWv8/embed/" loading="lazy" scrolling="no" allowtransparency="true" class="absolute left-0 w-full border-0 pointer-events-none" style="top:-54px; height:calc(100% + 220px);"></iframe>
+          <span class="absolute inset-0 bg-sage-darker/0 group-hover:bg-sage-darker/10 transition-colors"></span>
+        </a>
 
-        <blockquote class="instagram-media w-full" data-instgrm-permalink="https://www.instagram.com/p/DXHcjg3lJSV/?utm_source=ig_embed" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.08); margin:0; max-width:540px; min-width:280px; width:100%;">
-          <a href="https://www.instagram.com/p/DXHcjg3lJSV/" target="_blank" rel="noopener">Ver no Instagram</a>
-        </blockquote>
+        <a href="https://www.instagram.com/p/DXHcjg3lJSV/" target="_blank" rel="noopener" aria-label="Abrir post no Instagram" class="group relative block aspect-square rounded-2xl overflow-hidden shadow-soft hover:shadow-medium transition-all bg-white">
+          <iframe src="https://www.instagram.com/p/DXHcjg3lJSV/embed/" loading="lazy" scrolling="no" allowtransparency="true" class="absolute left-0 w-full border-0 pointer-events-none" style="top:-54px; height:calc(100% + 220px);"></iframe>
+          <span class="absolute inset-0 bg-sage-darker/0 group-hover:bg-sage-darker/10 transition-colors"></span>
+        </a>
 
-        <blockquote class="instagram-media w-full" data-instgrm-permalink="https://www.instagram.com/reel/DXzN7ivMjEK/?utm_source=ig_embed" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.08); margin:0; max-width:540px; min-width:280px; width:100%;">
-          <a href="https://www.instagram.com/reel/DXzN7ivMjEK/" target="_blank" rel="noopener">Ver no Instagram</a>
-        </blockquote>
+        <a href="https://www.instagram.com/reel/DXzN7ivMjEK/" target="_blank" rel="noopener" aria-label="Abrir post no Instagram" class="group relative block aspect-square rounded-2xl overflow-hidden shadow-soft hover:shadow-medium transition-all bg-white">
+          <iframe src="https://www.instagram.com/reel/DXzN7ivMjEK/embed/" loading="lazy" scrolling="no" allowtransparency="true" class="absolute left-0 w-full border-0 pointer-events-none" style="top:-54px; height:calc(100% + 220px);"></iframe>
+          <span class="absolute inset-0 bg-sage-darker/0 group-hover:bg-sage-darker/10 transition-colors"></span>
+        </a>
 
       </div>
-      <script async src="https://www.instagram.com/embed.js"></script>
     </div>
   </section>
 
@@ -818,7 +822,7 @@
             </li>
             <li class="flex items-start gap-3">
               <svg class="w-4 h-4 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Online · Brasil
+              Online · Brasil e Exterior
             </li>
           </ul>
 
